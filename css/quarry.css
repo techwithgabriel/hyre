@@ -32,12 +32,23 @@
 
     .content{
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .content img{
+        width: 700px;
+    }
+
+    .content-features{
+        width: 100%;
     }
 
      /* RESOURSES SECTION */
      .resources-header p{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .resources-cards {
@@ -45,7 +56,7 @@
         gap: 20px;
     }
     .resource-card {
-        width: calc(50% - 20px);
+        flex: 1 1 calc(50% - 1rem);
     }
 
     .resource-card-content h3{
@@ -56,7 +67,7 @@
     .resource-card-content p{
         font-weight: 500;
         color: #333;
-        font-size: 1.5em;
+        font-size: 1rem;
     }
 
     .resource-card-content a{
@@ -74,7 +85,7 @@
     .testimonial{
         display: flex;
         flex-direction: column-reverse;
-        height: 150vh;        
+        height: 160vh;  
     }
 
     .testimonial-text{
@@ -91,7 +102,13 @@
     }
         
     .testimonial-slide{
-        margin-bottom: 100px;
+        padding: 30% 0% 1% 0%;
+    }
+
+
+    .cta-text{
+        margin-bottom: 15%;
+        width: 100%;
     }
 
 
@@ -124,8 +141,12 @@
         width: 100%;
     }
     
+    .logo-button button{
+        padding: 20px;
+    }
+
     .header-text h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: normal;
         color: #333;
 
@@ -134,7 +155,7 @@
     .header-text p{
         color: #333;
         font-weight: 500;
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
 
     .why-us{
@@ -145,6 +166,22 @@
         display: block;
     }
     
+    .content-features {
+        width: 100%;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-features h2{
+        font-size: 2.5rem;
+    }
+
+    .content-features p{
+        font-size: 1.2rem;
+    }
 
     .partners{
         display: flex;
@@ -154,11 +191,11 @@
         gap: 5px;
         padding: 30px;
     }
+
     .roles{
         display: flex;
         align-items: center;
         justify-items: center;
-        padding: 0px 30px;
     }
     .roles div{
         font-size: 1.2em;
@@ -167,17 +204,13 @@
     .testimonial{
         display: flex;
         flex-direction: column-reverse;
-        height: 130vh;        
+        height: 140vh;        
     }
 
     .testimonial-content{
         display: flex;
         flex-direction: column-reverse;
         gap: 10px;
-    }
-
-    .testimonial-slide{
-        margin-bottom: 50px;
     }
 
     .testimonial-text{
@@ -190,11 +223,14 @@
     }
 
     .resources-cards {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
-    .resource-card {
-        width: calc(50% - 20px);
+
+    .resource-card{
+        flex: 1 1 100%;
     }
 
     .resource-card-content h3{
@@ -206,7 +242,7 @@
     .resource-card-content p{
         font-weight: 500;
         color: #333;
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     .resource-card-content a{
@@ -240,342 +276,6 @@
         flex-direction: column;
         
     }
-    .social-icon{
-        margin-bottom: 5%;
-    }
-    .footer-details div{
-        font-size: 1.2rem;
-    }
-    .footer-law{
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 20px;
-    }
-    .footer-law div{
-        padding-bottom: 20px;
-    }
-
-}
-
-
-
-
-/* 
-@media screen and (min-width: 992px) {
-    body {
-        color: red;
-    }
-}
- */
-
-
-
-
-/* @media only screen and (max-width: 1200px) {
-    /* HEADER SECTION *
-    .header-text{
-        display: inline-block;
-        width: 500px;
-    }
-    
-    .header-text h1{
-        font-size: 3rem;
-        font-weight: normal;
-        color: #333;
-
-    }
-
-    .header-text p{
-        color: #333;
-        font-weight: 500;
-        font-size: 1.4em;
-    }
-
-    /* CTA SECTION *
-    .cta-text h2{
-        font-size: 3.3rem;
-    }
-    .cta-text p{
-        color: #333;
-        font-size: 1.1rem;
-    }    
-    }
-
-/*
-@media only screen and (max-width: 1023px) {
-    .header-text{
-        display: inline-block;
-        width: 90%;
-    }
-    
-    .header-text h1{
-        font-size: 4.2rem;
-        font-weight: normal;
-        color: #333;
-
-    }
-
-    .header-text p{
-        color: #333;
-        font-weight: 500;
-        font-size: 1.3em;
-    }    
-    
-    .demo-link,
-    .nav-bar,
-    .user{
-        display: none;
-    }
-
-    /* WHY-US SECTION 
-    .why-us{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-
-    /* CONTENT SECTION 
-    .content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content-features {
-        margin-bottom: 30px;
-        font-size: 1.2em;
-    }
-
-    /* PARTNERS SECTION 
-    .partners{
-        display: flex;
-        align-items: center;
-    }
-    .roles{
-        display: flex;
-        align-items: center;
-        
-    }
-    .roles div{
-        font-size: 1.2em;
-    }
-    /* TESTIMONIAL SECTION 
-    .testimonial-content{
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    .testimony p{
-        font-size: 1.6rem;
-    }
-
-    /* RESOURCES SECTION 
-    .resources-header p{
-        font-size: 1.1rem;
-    }
-
-    .resources-cards {
-        justify-content: center;
-        gap: 20px;
-    }
-    .resource-card {
-        width: calc(50% - 20px);
-    }
-
-    .resource-card-content h3{
-        font-weight: bold;
-        color: #333;
-        font-size: 1.5rem;
-    }
-    .resource-card-content p{
-        font-weight: 500;
-        color: #333;
-        font-size: 1em;
-    }
-
-    .resource-card-content a{
-        font-size: 1.3rem;
-    }
-
-    .resource-author{
-        font-size: 1rem;
-    }
-
-    .resource-author img{
-        width: 50px;
-    }
-    /* CTA-SECTION
-    .cta-content{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    .cta-text h2{
-        font-size: 2.85rem;
-    }
-    .cta-text p,
-    .cta-text a{
-        font-size: 1.2rem;
-    }
-    .cta-content img{
-        width: 500%;
-    }
-    /* FOOTER SECTION
-    .footer-details{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .footer-details div{
-        font-size: 1.2rem;
-        font-weight: lighter;
-    }
-
-    .social-icon{
-        margin-bottom: 5%;
-    }
-
-    .footer-columns{
-        display: flex;
-        gap: 25%;
-    }
-
-    .footer-law{
-        display: flex;
-        flex-direction: row;
-        margin-top: 20px;
-    }
-    .footer-law div{
-        padding-bottom: 20px;
-    }
-}
-
-/*
-@media only screen and (max-width: 767px) {
-    /* HEADER SECTION 
-    .header-text{
-        display: inline-block;
-        width: 85%;
-    }
-    
-    .header-text h1{
-        font-size: 3.3rem;
-        font-weight: normal;
-        color:#333
-
-    }
-
-    .header-text p{
-        font-size: 1.2em;
-        padding: 0px 20px;
-        color:#333
-    }    
-    
-    .demo-link,
-    .nav-bar,
-    .user{
-        display: none;
-    }
-
-    /* WHY-US SECTION *
-    .why-us{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-
-    /* PARTNERS SECTION *
-    .partners{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .roles{
-        display: flex;
-        align-items: center;
-        
-    }
-    .roles div{
-        font-size: 0.79rem;
-    }
-    /* TESTIMONIAL SECTION *
-    .testimonial{
-        display: block;
-        height: 140vh;        
-    }
-
-    .testimonial-content{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 10px;
-    }
-
-    .testimonial-text{
-        width: 100%;
-    }
-    /* RESOURCES SECTION
-    .resources-header p{
-        font-size: 1.1rem;
-    }
-
-    .resources-cards {
-        justify-content: center;
-        gap: 20px;
-    }
-    .resource-card {
-        width: calc(50% - 20px);
-    }
-
-    .resource-card-content h3{
-        font-weight: bold;
-        color: #333;
-        font-size: 1.5rem;
-    }
-    .resource-card-content p{
-        font-weight: 500;
-        color: #333;
-        font-size: 1em;
-    }
-
-    .resource-card-content a{
-        font-size: 1.3rem;
-    }
-
-    .resource-author{
-        font-size: 1rem;
-    }
-
-    .resource-author img{
-        width: 50px;
-    }
-    /* CTA-SECTION 
-    .cta-content{
-        display: block;
-    }
-
-    .cta-text{
-        width: 100%;
-    }
-
-    .cta-img{
-        margin-top: 30px;
-    }
-
-    /* FOOTER SECTION
-    .footer-details{
-        display: flex;
-        flex-direction: column;
-        
-    }
-
     .social-icon{
         margin-bottom: 5%;
     }
